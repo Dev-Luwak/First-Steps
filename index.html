@@ -48,6 +48,15 @@
             display: block;
             border: none;
         }
+
+        table, th, td{
+            border: 2px solid lightblue;
+            border-collapse: collapse;
+        }
+        
+        th, td{
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -72,15 +81,18 @@
 
             <a href="#section6"><dt>Section 6</dt></a>
             <dd>This section uses article tags</dd>
+
+            <a href="#section7"><dt>Section 7</dt></a>
+            <dd>This section uses html tags to make a table</dd>
         </dl>
     </aside>
 
     <!-- Main Content -->
     <main>
         <section id="section1">
-            <h2>Section 1</h2>
+            <h2><u>Section 1</u></h2>
             <p>Below is a link:</p>
-            <a target="_blank" href="https://r.mtdv.me/articles/4hq-Z8BzTh">
+            <a target="_blank" href="https://i.etsystatic.com/8760538/r/il/e74109/1396352422/il_570xN.1396352422_5duq.jpg">
                 <button>Spank Me!</button>
             </a>
         </section>
@@ -88,7 +100,7 @@
         <hr>
 
         <section id="section2">
-            <h2>Section 2</h2>
+            <h2><u>Section 2</u></h2>
             <p>Click on the image to go to my Github account:</p>
             <a href="https://github.com/Dev-Luwak" target="_blank">
                 <img src="Dev-Luwak-PFP.png" alt="Github Profile" style="width: 300px; height: 300px; border-radius: 50%; border: solid 4px lightblue">
@@ -98,7 +110,7 @@
         <hr>
 
         <section id="section3">
-            <h2>Section 3</h2>
+            <h2><u>Section 3</u></h2>
             <p>This is a sample video:</p>
             <div style="min-height: 5vh; display: flex; justify-content: center; align-items: center;">
             <video style="border: 4px solid red"class="sample-video" controls autoplay loop muted>
@@ -111,7 +123,7 @@
         <hr>
 
         <section id="section4">
-            <h2>Section 4</h2>
+            <h2><u>Section 4</u></h2>
             <p>YouTube video using iframe:</p>
             <iframe width="1200" height="600" src="https://www.youtube.com/embed/lnsNlnbvxyo"
                 title="Cartoon, NCT, VALLO - Around Us" frameborder="0"
@@ -122,7 +134,7 @@
         <hr>
 
         <section id="section5">
-            <h2>Section 5</h2>
+            <h2><u>Section 5</u></h2>
             <p>Embedding Google Maps:</p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120378.69944351041!2d72.72255170080982!3d19.462707194845795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7aa23dce7efbf%3A0x99bd87871748d8f4!2sVirar%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1748336240812!5m2!1sen!2sin"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -132,6 +144,7 @@
         <hr>
         <section id="section6">
             <article>
+                <h2><u>Section 6</u></h2><br>
                 <h2>Article 1</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda mollitia ea minima quasi, autem ab earum, consequuntur dolor natus soluta obcaecati distinctio, placeat officia non fugiat beatae! Id quibusdam est voluptas excepturi illo distinctio odio doloribus aliquam minus, totam inventore, hic nobis? Eos esse consequatur ex corporis amet ab suscipit.</p>
             </article>
@@ -139,6 +152,27 @@
                 <h2>Article 2</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, repellat consequuntur pariatur asperiores tempora ab ducimus ipsam. Beatae, atque nostrum, officia quas itaque quibusdam in accusamus consectetur molestiae molestias dolorem.</p>
             </article>
+        </section>
+        <hr>
+        <section id="section7">
+            <h2><u>Section 7</u></h2>
+            <table>
+                <tr>
+                    <th>First Name</th>
+                    <th>Father's Name</th>
+                    <th>Last Name</th>
+                </tr>
+                <tr>
+                    <td>Pranav</td>
+                    <td>Purushottam</td>
+                    <td>Choudhary</td>
+                </tr>
+                <tr>
+                    <td>Abhinav</td>
+                    <td>Purushottam</td>
+                    <td>Choudhary</td>
+                </tr>
+            </table>
         </section>
     </main>
 
