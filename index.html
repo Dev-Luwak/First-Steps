@@ -69,7 +69,8 @@
         }
 
         .shadowbox {
-            width: 15em;
+            width: fit-content;
+            height: auto;
              border: 1px solid #333;
             box-shadow: 8px 8px 5px #444;
             padding: 8px 12px;
@@ -212,20 +213,35 @@
         <hr>
         <section id="section8">
             <h2><u>Section 8</u></h2>
-            <p>This is a Form:</p>
+            <p style="background-color: aqua; width: fit-content;">This is a Form:</p>
+            <div class="shadowbox">
             <form>
-                <label for="name">Name: </label>
-                <input type="text" name="name" id="name" placeholder="Name goes here" required><br><br>
-                <label for="pass">Password:</label>
-                <input type="text" id="pass" placeholder="Password" required><br><br>
-                <input type="radio" name="gender" value="Male">Male
-                <input type="radio" name="gender" value="Female">Female<br><br>
-                <button type="submit">Click Here</button>
+                <fieldset>
+                    <legend>Form Area</legend>
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Name goes here" required><br><br>
+                    <label for="pass">Password:</label>
+                    <input type="password" id="pass" placeholder="Password" required><br><br>
+                    <label for="Account-Type">Account Type:</label>
+                    <select id="Acccount-type">
+                        <option>Student</option>
+                        <option>Employee</option>
+                        <option>Admin</option>
+                    </select><br><br>
+                    <label for="gender">Gender:</label>
+                    <input type="radio" id="gender1" name="gender" value="Male">Male
+                    <input type="radio" id="gender2" name="gender" value="Female">Female<br><br>
+                    <label for="text-area">Enter text:</label>
+                    <textarea name="text-area" id="text-area" placeholder="Enter text here..."></textarea>
+                    <br><br>
+                    <button type="submit">Click to Submit</button>
+                </fieldset>
             </form>
+            </div>
         </section>
         <hr>
         <section>
-            <h2>Get in touch with Dev-Luwak  &#128522;:</h2>
+            <h2>Get in touch with Dev-Luwak  &#128521;:</h2>
         <nav>
             <ul>
                 <li class="nav-list"><a target="_blank" href="https://www.instagram.com/pranavc_023/"><img class="nav-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHP2W0X8Bj9Wwou8Y5Iv2q_Aa-nME9SMwEAA&s" alt="Instagram"></a></li>
