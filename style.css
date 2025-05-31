@@ -30,9 +30,19 @@ main {
   padding: 20px;
 }
 
+.main-heading{
+    text-align: center;
+    margin: 0 auto;
+    color: green; background-color: yellow;
+    border: solid green 2px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 350px;
+}
+
 hr {
   margin: 40px 0;
-  border: solid 1px;
+  border: dashed 2px;
   border-color: lightblue;
 }
 
