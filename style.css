@@ -39,6 +39,17 @@ main {
     border-bottom-left-radius: 20px;
     width: 350px;
 }
+.main-heading:hover{
+    text-align: center;
+    margin: 0 auto;
+    color: green; background-color: yellow;
+    border: solid green 2px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 350px;
+}
 
 hr {
   margin: 40px 0;
@@ -85,7 +96,17 @@ th, td {
   border: 1px solid #333;
   box-shadow: 8px 8px 5px #444;
   padding: 8px 12px;
-  background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+  background: linear-gradient(45deg, rgba(173, 216, 230, 0.4), rgba(221, 160, 221, 0.4));
+}
+
+.shadowbox:hover {
+  width: fit-content;
+  height: auto;
+  border: 1px solid #333;
+  box-shadow: 8px 8px 5px #444;
+  padding: 8px 12px;
+  background-image: linear-gradient(225deg, rgba(173, 216, 230, 0.4), rgba(221, 160, 221, 0.4));
+  transform: translate3d(0px, -5px, 0px);
 }
 
 .nav-list {
@@ -126,10 +147,15 @@ button:hover{
 
 .pfp{
     width: 300px; height: 300px; border-radius: 50%; border: solid 4px lightblue;
+    display: block;
     transition: transform 0.3s ease;
 }
 .pfp:hover{
     border-radius:10%;
     transform: translateY(-5px);
     border-color:lightgreen;
+}
+
+.form-button{
+  margin-left: 60px;
 }
