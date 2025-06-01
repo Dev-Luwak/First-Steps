@@ -3,54 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Testing</title>
+
     <style>
-        body{
-            font-family: 'Times New Roman', Times, serif;
-        }
+        .gradient-box {
+        position: relative;
+        width: 300px;
+        height: 200px;
+        color: white;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .gradient-box::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: linear-gradient(45deg, #ff6b6b, #f0e130);
+        z-index: -1;
+        transform: rotate(0deg);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .gradient-box:hover::before {
+        transform: rotate(180deg);
+    }
+
     </style>
 </head>
 <body>
-    <h2>Event Registration</h2>
-    <form>
-        <label for="name">Name:</label>
-        <br>
-        <br>
-        <input type="text" id="name" name="name">
-        <br>
-        <label for="mail">Email:</label>
-        <br><br>
-        <input type="email" id="mail" name="mail">
-        <br>
-        <label for="phone">Contact:</label>
-        <br><br>
-        <input type="text" id="phone" name="phone">
-        <br>
-        <label for="occupation">Occupation:</label>
-        <br><br>
-        <select name="occupation" id="occupation">
-            <option>Student</option>
-            <option>Working Professional</option>
-            <option>Others</option>
-        </select>
-        <br>
-        <p>Topics of Interest: </p>
-        <input type="checkbox" name="option" id="option1">
-        <br>
-        <label for="option1">HTML</label>
-        <br>
-        <input type="checkbox" name="option" id="option2">
-        <br>
-        <label for="option2">CSS</label>
-        <br>
-        <input type="checkbox" name="option" id="option3">
-        <br>
-        <label for="option3">JavaScript</label>
-        <br>
-        <label for="comments">Comments</label>
-        <br>
-        <textarea name="comments" id="comments" rows="5" cols="30"></textarea>
-        <input type="submit" id="button" value="Register">
-    </form>
+    <div class="gradient-box">Hover me!</div>
 </body>
 </html>
